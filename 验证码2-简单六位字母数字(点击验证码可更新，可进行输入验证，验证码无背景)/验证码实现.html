@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>js验证码</title>
+<link rel="stylesheet" type="text/css" href="验证码实现.css">
+<script type="text/javascript" src="验证码实现.js"></script>
+</head>
+<body onload="createCode()">
+<form id="form1" runat="server" onsubmit="validateCode()">
+ <div>
+  <table border="0" cellspacing="5" cellpadding="5" >
+   <tr>
+    <td></td>
+    <td><div class="code" id="checkCode" onclick="createCode()" ></div></td>
+    <td><a href="#" onclick="createCode()">看不清换一张</a></td>
+   </tr>
+   <tr>
+    <td>验证码：</td>
+    <td><input style="float:left;" type="text"  id="inputCode" /></td>
+    <td><input id="Button1" onclick="validateCode();" type="button" value="确定" /></td>
+   </tr>
+  </table>
+ </div>
+</form>
+</body>
+</html>
